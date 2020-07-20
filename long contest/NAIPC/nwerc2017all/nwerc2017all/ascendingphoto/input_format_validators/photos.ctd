@@ -1,0 +1,12 @@
+# One line containing the integers N (1 <= N <= 10^6), the number of people in the photo.
+INT(1,10^6, n)
+NEWLINE
+
+# one line with N integers on it.
+REPI(i, n, SPACE)
+    INT(1, 2*10^9, x[i])
+END
+
+NEWLINE
+
+EOF

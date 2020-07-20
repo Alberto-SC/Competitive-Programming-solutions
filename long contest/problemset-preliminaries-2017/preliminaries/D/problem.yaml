@@ -1,0 +1,11 @@
+---
+#    case_sensitive                   (de uitvoer is hoofdlettergevoelig)
+#    space_change_sensitive
+#    float_absolute_tolerance 1e-6    (stel absolute tolerantie in op 1e-6)
+#    float_relative_tolerance 1e-6    (stel relatieve tolerantie in op 1e-6)
+#    float_tolerance 1e-6             (stel beide toleranties in op 1e-6)
+validator_flags: case_sensitive space_change_sensitive
+# Het onderstaande gebruik je allen bij een custom validator. Stop in dat geval
+# je custom validator (ongecomprimeerd) in de map "output_validators".
+validation: default
+...

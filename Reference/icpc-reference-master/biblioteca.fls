@@ -1,0 +1,268 @@
+PWD c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.tex
+OUTPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.log
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.aux
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.aux
+OUTPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.aux
+INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.toc
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.toc
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+OUTPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.toc
+OUTPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/template.cpp
+INPUT c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/template.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/template.cpp
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrro7t.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/vimrc.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/vimrc.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/config/vimrc.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/debruijn.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/debruijn.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/debruijn.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/josephus.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/josephus.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/josephus.cpp
+INPUT c:/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrro7t.vf
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrb7t.vf
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/subsets.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/compile_time_fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/compile_time_fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/compile_time_fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/tips.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/tips.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/ad-hoc/tips.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/bip_match.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/bip_match.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/bip_match.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Bron_Kerbosh.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Bron_Kerbosh.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Bron_Kerbosh.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_mincost.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_mincost.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_mincost.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_top.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_top.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Dinic_top.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/djikstra.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/djikstra.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/djikstra.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Edmonds-Karp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Edmonds-Karp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/Edmonds-Karp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/floyd_warshall.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/floyd_warshall.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/floyd_warshall.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/gale_shapley.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/gale_shapley.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/gale_shapley.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/graph-paths.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/graph-paths.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/graph-paths.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kosajaru.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kosajaru.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kosajaru.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kruskal.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kruskal.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/kruskal.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lca-pd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lca-pd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lca-pd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/link_cut.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/link_cut.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/link_cut.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/lis.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/segtree.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/segtree.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/segtree.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/MaxClique_MeetInTheMiddle.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/tarjan.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/tarjan.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/tarjan.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/union-find.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/union-find.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/graph/union-find.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/binomial_coefficient.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/binomial_coefficient.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/binomial_coefficient.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/bit.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/bit.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/bit.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/expRap.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/expRap.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/expRap.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fast-fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fast-fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fast-fib.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fft.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fft.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/fft.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/gcd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/gcd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/gcd.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/lcm.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/lcm.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/lcm.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/Phi.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/Phi.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/Phi.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sieve.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sieve.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sieve.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sums.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sums.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/math/sums.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/corasick.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/corasick.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/corasick.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/hash.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/hash.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/hash.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/kmp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/kmp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/kmp.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/prefix_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/prefix_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/prefix_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array2.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array2.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_array2.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_automaton.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_automaton.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/suffix_automaton.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/z_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/z_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/string/z_function.cpp
+INPUT c:/Users/silva/Desktop/Programacion competitiva/Reference/icpc-reference-master/biblioteca.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb

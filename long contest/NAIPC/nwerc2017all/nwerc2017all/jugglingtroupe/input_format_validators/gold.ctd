@@ -1,0 +1,4 @@
+REGEX("[0-2]+", s)
+NEWLINE
+
+ASSERT(STRLEN(s) <= 10^6)

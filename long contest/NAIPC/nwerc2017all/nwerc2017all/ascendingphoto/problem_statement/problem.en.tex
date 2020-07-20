@@ -1,0 +1,38 @@
+\problemname{Ascending Photo}
+
+The members of the No-Weather-too-Extreme Recreational Climbing society
+completed their 100th successful summit today!
+To commemorate the occasion, we took a picture of all the members standing
+together in one row, to use for marketing purposes.
+
+However, the photograph looks messy; as usual, the members refused to order
+themselves in any kind of aesthetically pleasing way.
+We will need to reorder the picture.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{climbers.jpg}
+\caption{\href{https://www.pexels.com/photo/men-and-women-at-the-mountain-covered-with-snow-671912/}{This picture}
+         has been cut up and pasted back together to solve Sample Input 1.}%
+\end{figure}
+
+Our research tells us that having the climbers in ascending (non-decreasing)
+height order from left to right will be most visually appealing.
+We must cut up the picture we have and somehow paste it back together in this
+order.
+
+Find the minimum number of cuts you need to make to put the photograph into
+ascending order.
+
+\section*{Input}
+
+The input consists of:
+\begin{itemize}
+\item One line with an integer $n$ ($1 \leq n \leq 10^6 $), the number of people in the photo.
+\item One line with $n$ integers $h_1, \ldots, h_n$ ($1 \leq h_i \leq 2 \cdot 10^9$ for each $i$), the heights of the people in the photograph, from left to right.
+\end{itemize}
+
+\section*{Output}
+
+Output the minimum number of cuts needed to rearrange the photograph into any
+one ascending (non-decreasing) height order from left to right.

@@ -1,0 +1,10 @@
+REPI(r, 4)
+  REPI(c, 4, SPACE)
+    INT(1, 16, v[r*4+c])
+  END
+  NEWLINE
+END
+
+ASSERT(UNIQUE(v))
+
+EOF

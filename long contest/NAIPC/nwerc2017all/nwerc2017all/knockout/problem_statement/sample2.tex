@@ -1,0 +1,49 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{fancybox,pstricks,pst-node}
+
+\setlength{\fboxrule}{1.5pt}
+\pssetlength{\unitlength}{1}
+
+\newcommand{\team}[2]{\rnode{#1}{\psset{fillcolor=white,linestyle={#2}}%
+    \psframebox{\makebox[1.75\unitlength][c]%
+    {#1}\rule[-.2\unitlength]{0cm}{0.6\unitlength}}}}
+
+\newcommand{\game}[5]{\vbox{\hsize=3.5\unitlength\addtolength{\hsize}{2\fboxsep}
+    \addtolength{\hsize}{2\fboxrule}\team{#1}{#4}\par
+    \vspace{#3\unitlength}\par\team{#2}{#5}}}
+
+\begin{document}
+  \pagestyle{empty}
+  \thispagestyle{empty}
+  \psset{linewidth=1pt,framearc=0.3,fillstyle=solid}
+
+  \begin{pspicture}(0,0)(10.25,6.875)
+    % Byes
+    \psline{->,linestyle=dashed}(2.0,3.75)(2.5,3.75)
+    \psline{->,linestyle=dashed}(2.0,2.25)(2.5,2.25)
+    \psline{->,linestyle=dashed}(2.0,0.50)(2.5,0.50)
+
+    % R0
+    \rput{0}(1,5.5){\game{A}{B}{.5}{solid}{solid}}
+    % R1
+    \rput{0}(3.75,4.625){\game{A or B}{C}{0.85}{dashed}{solid}}
+    \rput{0}(3.75,1.375){\game{D}{E}{0.85}{solid}{solid}}
+    % R2
+    \rput{0}(6.5,3.0){\game{A or B or C}{D or E}{2.25}{dashed}{dashed}}
+    % Winner
+    \rput{0}(9.0625,3.0){\team{Champion!}{solid}}
+
+    \psset{angleB=180,linearc=5pt}
+    \ncdiag{-}{A}{A or B}
+    \ncdiag{-}{B}{A or B}
+
+    \ncdiag{-}{A or B}{A or B or C}
+    \ncdiag{-}{C}{A or B or C}
+    \ncdiag{-}{D}{D or E}
+    \ncdiag{-}{E}{D or E}
+
+    \ncdiag{-}{A or B or C}{Champion!}
+    \ncdiag{-}{D or E}{Champion!}
+
+  \end{pspicture}
+\end{document}

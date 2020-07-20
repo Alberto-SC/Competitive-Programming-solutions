@@ -1,0 +1,27 @@
+\problemname{Cube Bits}
+
+\illustration{0.4}{googleserver.jpg}{
+  A confused server.
+  Photo by \href{http://www.flickr.com/photos/textfiles/8272518223/}{Jason Scott}}%
+The new computers are here! However, we made a mistake during the order: we
+thought we were ordering machines with qubits; in fact, we ordered several
+hundred computers powered by cube-bits.
+
+The programs and data we had ready were prepared in base 10. To feed the data
+into the new computer, which uses a cubic system of counting, we will need to
+convert it to base 3 first.
+
+Write a program to convert a stream of decimal numbers into ternary format, so
+they fit the new system's input bus.
+
+\section*{Input}
+The input consists of:
+\begin{itemize}
+	\item One line with an integer $n$ ($1 \le n \le 10^6$), the size of the data stream.
+    \item $n$ lines with one decimal integer $v_i$ ($0 \le v < 3^{20}$), the decimal
+representation of the $i$-th integer in the data stream.
+\end{itemize}
+\section*{Output}
+
+Output $n$ lines, giving the numbers converted to base-$3$, in the same order as given.
+In the interest of conserving disk space, do not print leading zeroes.

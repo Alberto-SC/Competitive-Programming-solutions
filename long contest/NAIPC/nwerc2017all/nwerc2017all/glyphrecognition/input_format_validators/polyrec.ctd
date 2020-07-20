@@ -1,0 +1,6 @@
+INT(1,1000,n) NEWLINE
+REPI(i,n)
+	INT(-10^6,10^6,x[i]) SPACE INT(-10^6,10^6,y[i]) NEWLINE
+	ASSERT( x[i] != 0 || y[i] != 0 )
+END
+ASSERT( UNIQUE(x,y) )

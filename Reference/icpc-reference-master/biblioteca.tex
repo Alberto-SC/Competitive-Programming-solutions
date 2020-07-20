@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Configurations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{article}
+\setcounter{secnumdepth}{-1} 
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{courier}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[top=2cm, bottom=1.5cm, left=1cm, right=1cm,landscape]{geometry}
+
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Reference}
+\rhead{\thepage}
+\cfoot{Alberto Silva Reference}
+
+\usepackage{color}
+\definecolor{cstrings}{rgb}{0.6,0,0}
+\definecolor{ccomments}{rgb}{0.25,0.5,0.35}
+\definecolor{ckeywords}{rgb}{0.25,0.35,0.75}
+
+\usepackage{listings}
+\lstset{language=C++,tabsize=4,basicstyle=\scriptsize\ttfamily,columns=fullflexible}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Commands 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% add Sub Sub Section of a folder
+\newcommand\addSS[4]{
+  \subsubsection{#2}
+  \lstinputlisting[language=#1]{#3/#4}
+}
+% add Sub Section of a folder
+\newcommand\addS[4]{
+  \subsection{#2}
+  \lstinputlisting[language=#1]{#3/#4}
+}
+% add Sub Sub Section of root folder
+\newcommand\addSSL[3]{
+  \subsubsection{#2}
+  \lstinputlisting[language=#1]{#3}
+}
+% add Sub Section of root folder
+\newcommand\addSL[3]{
+  \subsection{#2}
+  \lstinputlisting[language=#1]{#3}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   Document 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{fancy}
+
+\begin{multicols}{2}
+\tableofcontents
+\newpage
+
+\section{Configuration}
+\addS{c++}{Template}{config}{template.cpp}
+\addS{c++}{Vim}{config}{vimrc.cpp}
+
+\section{Ad-Hoc}
+\addS{c++}{Debrujin}{ad-hoc}{debruijn.cpp}
+\addS{c++}{Josephus Problem}{ad-hoc}{josephus.cpp}
+\addS{c++}{LIS}{ad-hoc}{lis.cpp}
+\addS{c++}{Subsets}{ad-hoc}{subsets.cpp}
+\addS{c++}{Josephus Problem}{ad-hoc}{subsets.cpp}
+\addS{c++}{Fib in Compile Time}{ad-hoc}{compile_time_fib.cpp}
+\addS{c++}{Tips}{ad-hoc}{tips.cpp}
+
+\section{Geometry}
+
+\section{Graph}
+\addS{c++}{Bip Match}{graph}{bip_match.cpp}
+\addS{c++}{Bron Kerbosch}{graph}{Bron_Kerbosh.cpp}
+\addS{c++}{Dinic Min Cost}{graph}{Dinic_mincost.cpp}
+\addS{c++}{Dinic}{graph}{Dinic_top.cpp}
+\addS{c++}{Djikstra}{graph}{djikstra.cpp}
+\addS{c++}{Edmonds Karp}{graph}{Edmonds-Karp.cpp}
+\addS{c++}{MaxClique}{graph}{MaxClique_MeetInTheMiddle.cpp}
+\addS{c++}{Floyd Warshall}{graph}{floyd_warshall.cpp}
+\addS{c++}{Gale Shapley}{graph}{gale_shapley.cpp}
+\addS{c++}{Graphs Paths}{graph}{graph-paths.cpp}
+\addS{c++}{kosajaru}{graph}{kosajaru.cpp}
+\addS{c++}{Kruskal}{graph}{kruskal.cpp}
+\addS{c++}{LCA}{graph}{lca-pd.cpp}
+\addS{c++}{Link Cut}{graph}{link_cut.cpp}
+\addS{c++}{LIS}{graph}{lis.cpp}
+\addS{c++}{Seg Tree}{graph}{segtree.cpp}
+\addS{c++}{MaxClique MeetInTheMiddle}{graph}{MaxClique_MeetInTheMiddle.cpp}
+\addS{c++}{Tarjan}{graph}{tarjan.cpp}
+\addS{c++}{Union Find}{graph}{union-find.cpp}
+
+
+\section{Math}
+\addS{c++}{Binomial}{math}{binomial_coefficient.cpp}
+\addS{c++}{Bit}{math}{bit.cpp}
+\addS{c++}{Fast Pot}{math}{expRap.cpp}
+\addS{c++}{Fast Fib}{math}{fast-fib.cpp}
+\addS{c++}{FFT}{math}{fft.cpp}
+\addS{c++}{GCD}{math}{gcd.cpp}
+\addS{c++}{LCM}{math}{lcm.cpp}
+\addS{c++}{Phi}{math}{Phi.cpp}
+\addS{c++}{Sieve}{math}{sieve.cpp}
+\addS{c++}{Sums}{math}{sums.cpp}
+
+\section{String}
+\addS{c++}{Aho Corasick}{string}{corasick.cpp}
+\addS{c++}{Hash}{string}{hash.cpp}
+\addS{c++}{KMP}{string}{kmp.cpp}
+\addS{c++}{Prefix Function}{string}{prefix_function.cpp}
+\addS{c++}{Suffix Array}{string}{suffix_array.cpp}
+\addS{c++}{Suffix Array2}{string}{suffix_array2.cpp}
+\addS{c++}{Suffix Automata}{string}{suffix_automaton.cpp}
+\addS{c++}{Z Function}{string}{z_function.cpp}
+
+
+\end{multicols}
+\end{document}

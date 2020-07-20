@@ -1,0 +1,9 @@
+name: Broken Gearbox
+source: Northwestern Europe Regional Contest (NWERC) 2017 Practice
+source_url: https://2017.nwerc.eu
+author: Jim Grimmett
+license: cc by-sa
+validation: custom
+
+limits:
+  time_multiplier: 1.6

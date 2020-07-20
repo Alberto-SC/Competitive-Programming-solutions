@@ -1,0 +1,223 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}bits/stdc++.h\PYGZgt{}}
+\PYG{k}{using} \PYG{k}{namespace} \PYG{n}{std}\PYG{p}{;}
+\PYG{k}{using} \PYG{n}{Integer128} \PYG{o}{=} \PYG{n}{\PYGZus{}\PYGZus{}int128}\PYG{p}{;}
+\PYG{k}{typedef} \PYG{n}{\PYGZus{}\PYGZus{}int128} \PYG{n}{Intsote}\PYG{p}{;}
+\PYG{k}{typedef} \PYG{k+kt}{long} \PYG{k+kt}{long} \PYG{k+kt}{int} \PYG{n}{lli}\PYG{p}{;}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}INTSOTE\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    Función para imprimir el \PYGZus{}\PYGZus{}int128 }
+\PYG{c+cm}{*/}
+\PYG{n}{ostream}\PYG{o}{\PYGZam{}} \PYG{k}{operator}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{p}{(} \PYG{n}{ostream}\PYG{o}{\PYGZam{}} \PYG{n}{dest}\PYG{p}{,} \PYG{n}{\PYGZus{}\PYGZus{}int128\PYGZus{}t} \PYG{n}{value} \PYG{p}{)\PYGZob{}}
+    \PYG{n}{ostream}\PYG{o}{::}\PYG{n}{sentry} \PYG{n}{s}\PYG{p}{(} \PYG{n}{dest} \PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(} \PYG{n}{s} \PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{\PYGZus{}\PYGZus{}uint128\PYGZus{}t} \PYG{n}{tmp} \PYG{o}{=} \PYG{n}{value} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{o}{?} \PYG{o}{\PYGZhy{}}\PYG{n+nl}{value} \PYG{p}{:} \PYG{n}{value}\PYG{p}{;}
+        \PYG{k+kt}{char} \PYG{n}{buffer}\PYG{p}{[} \PYG{l+m+mi}{128} \PYG{p}{];}
+        \PYG{k+kt}{char}\PYG{o}{*} \PYG{n}{d} \PYG{o}{=} \PYG{n}{std}\PYG{o}{::}\PYG{n}{end}\PYG{p}{(} \PYG{n}{buffer} \PYG{p}{);}
+        \PYG{k}{do} \PYG{p}{\PYGZob{}}
+            \PYG{o}{\PYGZhy{}\PYGZhy{}} \PYG{n}{d}\PYG{p}{;}
+            \PYG{o}{*}\PYG{n}{d} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}0123456789\PYGZdq{}}\PYG{p}{[} \PYG{n}{tmp} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{10} \PYG{p}{];}
+            \PYG{n}{tmp} \PYG{o}{/=} \PYG{l+m+mi}{10}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{while} \PYG{p}{(} \PYG{n}{tmp} \PYG{o}{!=} \PYG{l+m+mi}{0} \PYG{p}{);}
+        \PYG{k}{if} \PYG{p}{(} \PYG{n}{value} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{o}{\PYGZhy{}\PYGZhy{}} \PYG{n}{d}\PYG{p}{;}
+            \PYG{o}{*}\PYG{n}{d} \PYG{o}{=} \PYG{l+s+sc}{\PYGZsq{}\PYGZhy{}\PYGZsq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k+kt}{int} \PYG{n}{len} \PYG{o}{=} \PYG{n}{end}\PYG{p}{(} \PYG{n}{buffer} \PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{d}\PYG{p}{;}
+        \PYG{k}{if} \PYG{p}{(} \PYG{n}{dest}\PYG{p}{.}\PYG{n}{rdbuf}\PYG{p}{()}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{sputn}\PYG{p}{(} \PYG{n}{d}\PYG{p}{,} \PYG{n}{len} \PYG{p}{)} \PYG{o}{!=} \PYG{n}{len} \PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{dest}\PYG{p}{.}\PYG{n}{setstate}\PYG{p}{(} \PYG{n}{ios\PYGZus{}base}\PYG{o}{::}\PYG{n}{badbit} \PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{dest}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Exponenciacion y multiplicacion modular\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{	[Tested Timus 1141,1204, uva 1230,374,11029]}
+\PYG{c+cm}{*/}
+\PYG{c+c1}{//Ed1.\PYGZhy{} Do Not use mod\PYGZus{}mult if it gives TLE}
+\PYG{c+c1}{//Ed2.\PYGZhy{} Usually in small base and exponent }
+\PYG{c+c1}{//Ed3.\PYGZhy{} Al chile ya no lo uses }
+\PYG{n}{lli} \PYG{n}{mod\PYGZus{}mult}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{a}\PYG{p}{,} \PYG{n}{lli} \PYG{n}{b}\PYG{p}{,} \PYG{n}{lli} \PYG{n}{mod}\PYG{p}{)\PYGZob{}}
+	\PYG{n}{lli} \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+	\PYG{k}{while}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{b} \PYG{o}{\PYGZam{}} \PYG{l+m+mi}{1}\PYG{p}{)}	\PYG{n}{x} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x} \PYG{o}{+} \PYG{n}{a}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{mod}\PYG{p}{;}
+		\PYG{n}{a} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{mod}\PYG{p}{;}
+		\PYG{n}{b} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k}{return} \PYG{n}{x}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{lli} \PYG{n}{mod\PYGZus{}pow}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{a}\PYG{p}{,} \PYG{n}{lli} \PYG{n}{n}\PYG{p}{,} \PYG{n}{lli} \PYG{n}{mod}\PYG{p}{)\PYGZob{}}
+	\PYG{n}{lli} \PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+	\PYG{k}{while}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZam{}} \PYG{l+m+mi}{1}\PYG{p}{)}	\PYG{n}{x} \PYG{o}{=} \PYG{n}{mod\PYGZus{}mult}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{mod}\PYG{p}{);}
+		\PYG{n}{a} \PYG{o}{=} \PYG{n}{mod\PYGZus{}mult}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{mod}\PYG{p}{);}
+		\PYG{n}{n} \PYG{o}{\PYGZgt{}\PYGZgt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k}{return} \PYG{n}{x}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    C++ is stupid and pow(10,2) is 99}
+\PYG{c+cm}{    better use mod\PYGZus{}pow whit mod very large }
+\PYG{c+cm}{*/}
+\PYG{k+kt}{int} \PYG{n}{trail}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{a}\PYG{p}{,}\PYG{n}{lli} \PYG{n}{b}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)\PYGZob{}}
+    \PYG{n}{lli} \PYG{n}{ntrail} \PYG{o}{=} \PYG{n}{mod\PYGZus{}pow}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{n}{n}\PYG{p}{,}\PYG{l+m+mi}{10000000000}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n+nf}{mod\PYGZus{}pow}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{b}\PYG{p}{,}\PYG{n}{ntrail}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}} 
+\PYG{k+kt}{int} \PYG{n}{leading}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{a}\PYG{p}{,}\PYG{n}{lli} \PYG{n}{b}\PYG{p}{,}\PYG{n}{lli} \PYG{n}{n}\PYG{p}{)\PYGZob{}}
+    \PYG{n}{n}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+    \PYG{n}{lli} \PYG{n}{nleading} \PYG{o}{=} \PYG{n}{mod\PYGZus{}pow}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{n}{n}\PYG{p}{,}\PYG{l+m+mi}{10000000000}\PYG{p}{);}
+    \PYG{k}{return} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)(}\PYG{n}{pow}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{fmod}\PYG{p}{(}\PYG{n}{b}\PYG{o}{*}\PYG{n}{log10}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),} \PYG{l+m+mi}{1}\PYG{p}{))}\PYG{o}{*}\PYG{n}{nleading}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Euclides extendido\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    Solve ax+by = (a,b)}
+\PYG{c+cm}{	// Algoritmo de Euclides extendido entre a y b. Ademas de devolver el gcd(a, b), resuelve la ecuación diofantica con el par (x, y).}
+\PYG{c+cm}{	//Si el parametro mod no es especificado, se resuelve con aritmetica normal; si mod se especifica, la identidad se resuelve modulo mod.}
+\PYG{c+cm}{	[Tested Timus 1141,1204]}
+\PYG{c+cm}{*/}
+\PYG{k+kt}{int} \PYG{n}{gcd}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,}\PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,}\PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{x}\PYG{p}{,}\PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{y}\PYG{p}{)\PYGZob{}}
+	\PYG{k}{if}\PYG{p}{(}\PYG{n}{b}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{y} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{k}{return} \PYG{n}{a}\PYG{p}{;\PYGZcb{}}
+	\PYG{k+kt}{int} \PYG{n}{r} \PYG{o}{=} \PYG{n}{gcd}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,} \PYG{n}{a}\PYG{o}{\PYGZpc{}}\PYG{n}{b}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{x}\PYG{p}{);}
+	\PYG{n}{y} \PYG{o}{\PYGZhy{}=} \PYG{n}{a}\PYG{o}{/}\PYG{n}{b}\PYG{o}{*}\PYG{n}{x}\PYG{p}{;}
+	\PYG{k}{return} \PYG{n}{r}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Inverso modular\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{k+kt}{int} \PYG{n}{inverse}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{m}\PYG{p}{)\PYGZob{}}
+	\PYG{k+kt}{int} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{p}{;}
+    \PYG{k}{if} \PYG{n+nf}{isPrime}\PYG{p}{(}\PYG{n}{m}\PYG{p}{)}\PYG{k}{return} \PYG{n}{mod\PYGZus{}pow}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{m}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{n}{m}\PYG{p}{);}
+	\PYG{k}{if}\PYG{p}{(}\PYG{n}{gcd}\PYG{p}{(} \PYG{n}{a}\PYG{p}{,} \PYG{n}{m}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{p}{)} \PYG{o}{!=} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+	\PYG{k}{return} \PYG{p}{(}\PYG{n}{x}\PYG{o}{\PYGZpc{}}\PYG{n}{m} \PYG{o}{+} \PYG{n}{m}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{m}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    All inverse (1 to p\PYGZhy{}1)\PYGZpc{}p}
+\PYG{c+cm}{*/}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{lli}\PYG{o}{\PYGZgt{}} \PYG{n}{allinverse}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{p}\PYG{p}{)\PYGZob{}}
+    \PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{lli}\PYG{o}{\PYGZgt{}} \PYG{n}{ans}\PYG{p}{(}\PYG{n}{p}\PYG{p}{);}
+    \PYG{n}{ans}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{;}\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n+nl}{p}\PYG{p}{:}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+        \PYG{n}{ans}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{p}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{p}\PYG{o}{/}\PYG{n}{i}\PYG{p}{)}\PYG{o}{*}\PYG{n}{ans}\PYG{p}{[}\PYG{n}{p}\PYG{o}{\PYGZpc{}}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZpc{}}\PYG{n}{p}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Linear Diophantine Equation\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    Use gcd \PYGZhy{}Extended euclides\PYGZhy{}}
+\PYG{c+cm}{    Solve ax+by=c}
+\PYG{c+cm}{    \PYGZhy{}Find any solution}
+\PYG{c+cm}{    \PYGZhy{}Getting all solutions}
+\PYG{c+cm}{    \PYGZhy{}Finding the number of solutions and the solutions in a given interval}
+\PYG{c+cm}{    \PYGZhy{}Find the solution with minimum value of x+y}
+\PYG{c+cm}{    [Tested Spoj \PYGZhy{} Crucial Equation,SGU 106,Codeforces \PYGZhy{} Ebony and Ivory,Codechef }
+\PYG{c+cm}{    \PYGZhy{} Get AC in one go, LightOj \PYGZhy{} Solutions to an equation]}
+\PYG{c+cm}{*/}
+\PYG{k+kt}{bool} \PYG{n}{find\PYGZus{}any\PYGZus{}solution}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{a}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{b}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{c}\PYG{p}{,} \PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{x0}\PYG{p}{,} \PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{y0}\PYG{p}{,} \PYG{k+kt}{int} \PYG{o}{\PYGZam{}}\PYG{n}{g}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{g} \PYG{o}{=} \PYG{n}{gcd}\PYG{p}{(}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{a}\PYG{p}{),} \PYG{n}{abs}\PYG{p}{(}\PYG{n}{b}\PYG{p}{),} \PYG{n}{x0}\PYG{p}{,} \PYG{n}{y0}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{c} \PYG{o}{\PYGZpc{}} \PYG{n}{g}\PYG{p}{)} 
+        \PYG{k}{return} \PYG{n+nb}{false}\PYG{p}{;}
+
+    \PYG{n}{x0} \PYG{o}{*=} \PYG{n}{c} \PYG{o}{/} \PYG{n}{g}\PYG{p}{;}
+    \PYG{n}{y0} \PYG{o}{*=} \PYG{n}{c} \PYG{o}{/} \PYG{n}{g}\PYG{p}{;}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{x0} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{x0}\PYG{p}{;}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{b} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{y0} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{y0}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n+nb}{true}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}PHI de euler\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{k+kt}{int} \PYG{n}{phi}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{result} \PYG{o}{=} \PYG{n}{n}\PYG{p}{;}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{;} \PYG{n}{i} \PYG{o}{*} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n}{i} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{while}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n}{i} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)}
+                \PYG{n}{n} \PYG{o}{/=} \PYG{n}{i}\PYG{p}{;}
+            \PYG{n}{result} \PYG{o}{\PYGZhy{}=} \PYG{n}{result} \PYG{o}{/} \PYG{n}{i}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{n}{result} \PYG{o}{\PYGZhy{}=} \PYG{n}{result} \PYG{o}{/} \PYG{n}{n}\PYG{p}{;}
+    \PYG{k}{return} \PYG{n}{result}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}GCD and LCM\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    [Tested ??]}
+\PYG{c+cm}{*/}
+\PYG{n}{lli} \PYG{n}{gcd}\PYG{p}{(}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{lli}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}}\PYG{n}{nums}\PYG{p}{)\PYGZob{}}
+    \PYG{n}{lli} \PYG{n}{ans} \PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{lli} \PYG{o}{\PYGZam{}}\PYG{n+nl}{num}\PYG{p}{:}\PYG{n}{nums}\PYG{p}{)}\PYG{n}{ans} \PYG{o}{=}\PYG{n}{\PYGZus{}\PYGZus{}gcd}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,}\PYG{n}{num}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{lli} \PYG{n}{lcm}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{a}\PYG{p}{,}\PYG{n}{lli} \PYG{n}{b}\PYG{p}{)\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{b}\PYG{o}{*}\PYG{p}{(}\PYG{n}{a}\PYG{o}{/}\PYG{n}{\PYGZus{}\PYGZus{}gcd}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{b}\PYG{p}{));}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{lli} \PYG{n}{lcm}\PYG{p}{(}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{lli}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZam{}} \PYG{n}{nums}\PYG{p}{)\PYGZob{}}
+    \PYG{n}{lli} \PYG{n}{ans} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} 
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{lli} \PYG{o}{\PYGZam{}} \PYG{n+nl}{num} \PYG{p}{:} \PYG{n}{nums}\PYG{p}{)} \PYG{n}{ans} \PYG{o}{=} \PYG{n}{lcm}\PYG{p}{(}\PYG{n}{ans}\PYG{p}{,} \PYG{n}{num}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n}{ans}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Teorema chino del residuo\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    [Tested ???]}
+\PYG{c+cm}{    if p1,p2,p3 are coprime }
+\PYG{c+cm}{*/}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{nums}\PYG{p}{;}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{n}{rem}\PYG{p}{;}
+\PYG{k+kt}{int} \PYG{n+nf}{CRT}\PYG{p}{()} \PYG{p}{\PYGZob{}} 
+    \PYG{k+kt}{int} \PYG{n}{prod} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} 
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{nums}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} 
+        \PYG{n}{prod} \PYG{o}{*=} \PYG{n}{nums}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}   
+    \PYG{k+kt}{int} \PYG{n}{result} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}   
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{nums}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}} 
+        \PYG{k+kt}{int} \PYG{n}{pp} \PYG{o}{=} \PYG{n}{prod} \PYG{o}{/} \PYG{n}{nums}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];} 
+        \PYG{n}{result} \PYG{o}{+=} \PYG{n}{rem}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{*} \PYG{n}{inverse}\PYG{p}{(}\PYG{n}{pp}\PYG{p}{,} \PYG{n}{nums}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])} \PYG{o}{*} \PYG{n}{pp}\PYG{p}{;} 
+    \PYG{p}{\PYGZcb{}} 
+    \PYG{k}{return} \PYG{n}{result} \PYG{o}{\PYGZpc{}} \PYG{n}{prod}\PYG{p}{;} 
+\PYG{p}{\PYGZcb{}} 
+\PYG{c+cm}{/*}
+\PYG{c+cm}{    general CRT if }
+\PYG{c+cm}{*/}
+\PYG{k+kr}{inline} \PYG{n}{lli} \PYG{n+nf}{normalize}\PYG{p}{(}\PYG{n}{lli} \PYG{n}{x}\PYG{p}{,} \PYG{n}{lli} \PYG{n}{mod}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{n}{x} \PYG{o}{\PYGZpc{}=} \PYG{n}{mod}\PYG{p}{;} \PYG{k}{if} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{n}{x} \PYG{o}{+=} \PYG{n}{mod}\PYG{p}{;} \PYG{k}{return} \PYG{n}{x}\PYG{p}{;} \PYG{p}{\PYGZcb{}}
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{a}\PYG{p}{;} 
+\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}} \PYG{n}{n}\PYG{p}{;}
+\PYG{n}{lli} \PYG{n+nf}{CRT}\PYG{p}{(}\PYG{n}{lli} \PYG{o}{\PYGZam{}}\PYG{n}{ans}\PYG{p}{,}\PYG{n}{lli} \PYG{o}{\PYGZam{}}\PYG{n}{LCM}\PYG{p}{)\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{t} \PYG{o}{=}\PYG{n}{a}\PYG{p}{.}\PYG{n}{size}\PYG{p}{();}
+    \PYG{n}{ans} \PYG{o}{=} \PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+    \PYG{n}{LCM} \PYG{o}{=} \PYG{n}{n}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{t}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{x1}\PYG{p}{,}\PYG{n}{d}\PYG{o}{=} \PYG{n}{gcd}\PYG{p}{(}\PYG{n}{LCM}\PYG{p}{,} \PYG{n}{n}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{x1}\PYG{p}{,}\PYG{n}{d}\PYG{p}{);}
+        \PYG{k}{if}\PYG{p}{((}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{ans}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{d} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{n}{ans} \PYG{o}{=} \PYG{n}{normalize}\PYG{p}{(}\PYG{n}{ans} \PYG{o}{+} \PYG{n}{x1} \PYG{o}{*} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{ans}\PYG{p}{)} \PYG{o}{/} \PYG{n}{d} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{n}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{/} \PYG{n}{d}\PYG{p}{)} \PYG{o}{*} \PYG{n}{LCM}\PYG{p}{,} \PYG{n}{LCM} \PYG{o}{*} \PYG{n}{n}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{/} \PYG{n}{d}\PYG{p}{);}
+        \PYG{n}{LCM} \PYG{o}{=} \PYG{n}{lcm}\PYG{p}{(}\PYG{n}{LCM}\PYG{p}{,} \PYG{n}{n}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]);} \PYG{c+c1}{// you can save time by replacing above LCM * n[i] /d by LCM = LCM * n[i] / d}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Factorial modulo p\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{k+kt}{int} \PYG{n+nf}{factmod}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{p}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{res} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{k}{while} \PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{res} \PYG{o}{=} \PYG{p}{(}\PYG{n}{res} \PYG{o}{*} \PYG{p}{((}\PYG{n}{n}\PYG{o}{/}\PYG{n}{p}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2} \PYG{o}{?}  \PYG{n}{p}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{:} \PYG{l+m+mi}{1}\PYG{p}{))} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}=} \PYG{n}{n}\PYG{o}{\PYGZpc{}}\PYG{n}{p}\PYG{p}{;} \PYG{o}{++}\PYG{n}{i}\PYG{p}{)}
+            \PYG{n}{res} \PYG{o}{=} \PYG{p}{(}\PYG{n}{res} \PYG{o}{*} \PYG{n}{i}\PYG{p}{)} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+        \PYG{n}{n} \PYG{o}{/=} \PYG{n}{p}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{res} \PYG{o}{\PYGZpc{}} \PYG{n}{p}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{//\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Oerador moudulo\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}//}
+\PYG{c+c1}{//(A + B) mod C = (A mod C + B mod C) mod C}
+\PYG{c+c1}{//(A * B) mod C = (A mod C * B mod C) mod C}
+\PYG{c+c1}{// xy (mod a) ≡ ((x (mod a) * y) (mod a))}
+\PYG{c+c1}{// A\PYGZca{}B mod M = ( A\PYGZca{}(M\PYGZhy{}1) * A\PYGZca{}(M\PYGZhy{}1) *.......* A\PYGZca{}(M\PYGZhy{}1) * A\PYGZca{}(x) ) mod M}
+\PYG{c+c1}{// a\PYGZca{}(p\PYGZhy{}1) mod p = 1, When p is prime.}
+
+
+
+\PYG{k+kt}{int} \PYG{n+nf}{main}\PYG{p}{()\PYGZob{}}
+	\PYG{n}{Intsote} \PYG{n}{a} \PYG{o}{=} \PYG{l+m+mi}{1ll}\PYG{p}{;}
+	\PYG{k}{for}\PYG{p}{(} \PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{100}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++} \PYG{p}{)\PYGZob{}}
+		\PYG{n}{a} \PYG{o}{\PYGZlt{}\PYGZlt{}=} \PYG{l+m+mi}{1}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{n}{cout} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{a} \PYG{o}{\PYGZlt{}\PYGZlt{}} \PYG{n}{endl}\PYG{p}{;}
+	\PYG{n}{cout}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{n}{mul\PYGZus{}inv}\PYG{p}{(}\PYG{l+m+mi}{42}\PYG{p}{,} \PYG{l+m+mi}{2017}\PYG{p}{)}\PYG{o}{\PYGZlt{}\PYGZlt{}}\PYG{n}{endl}\PYG{p}{;}
+
+	\PYG{k}{return} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

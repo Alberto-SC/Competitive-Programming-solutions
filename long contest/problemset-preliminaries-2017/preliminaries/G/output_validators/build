@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -std=c++11 -Wall -Wextra -pedantic -O2 ./grammar.cpp -o grammar
+g++ -std=c++11 -Wall -Wextra -pedantic -O2 ./output_validator.cpp -o output_validator

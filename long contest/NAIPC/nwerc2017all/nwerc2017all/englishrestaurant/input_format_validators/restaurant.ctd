@@ -1,0 +1,10 @@
+# Ntables Groupsize Time
+INT(1, 100, n) SPACE
+INT(1, 200, g) SPACE
+INT(1, 100, t) NEWLINE
+
+# Table capacities
+REP(n, SPACE)
+  INT(1, 200)
+END
+NEWLINE

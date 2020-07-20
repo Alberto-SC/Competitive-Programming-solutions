@@ -1,0 +1,9 @@
+name: Cube Bits
+source: Northwestern Europe Regional Contest (NWERC) 2017 Practice
+source_url: https://2017.nwerc.eu
+author: Robin Lee
+license: cc by
+limits:
+  output: 45 # megabytes (max output size = exactly 21MB)
+  time_multiplier: 1.34
+  time_safety_margin: 1

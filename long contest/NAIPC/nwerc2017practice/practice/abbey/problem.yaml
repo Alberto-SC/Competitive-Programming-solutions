@@ -1,0 +1,7 @@
+name: Abbey Courtyard
+source: Northwestern Europe Regional Contest (NWERC) 2017 Practice
+source_url: https://2017.nwerc.eu
+author: Per Austrin
+license: cc by
+
+validator_flags: float_tolerance 1e-6

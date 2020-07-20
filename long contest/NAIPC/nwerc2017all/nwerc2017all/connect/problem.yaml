@@ -1,0 +1,8 @@
+name: Connect the Dots
+author: Johan Sannemo
+license: cc by-sa
+source: Northwestern Europe Regional Contest (NWERC) 2017
+source_url: http://2017.nwerc.eu
+
+limits:
+   time_multiplier: 3.5

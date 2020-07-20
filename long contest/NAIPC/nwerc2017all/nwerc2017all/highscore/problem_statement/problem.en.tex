@@ -1,0 +1,35 @@
+\problemname{High Score}
+
+\illustration{0.4}{pyramid.jpg}{The Great Pyramid of Giza; one of the seven wonders. By \href{https://commons.wikimedia.org/wiki/User:Nina-no}{Nina-no}, licensed under CC BY-SA 3.0}%
+Mårten and Simon enjoy playing the popular board game Seven Wonders, and have just finished a match. It is now time
+to tally the scores.
+
+One of the ways to score in Seven Wonders is through the use of \emph{Science}. During the game, the players
+may collect a number of Science tokens of three different types: \emph{Cog}, \emph{Tablet}, and \emph{Compass}.
+If a player has $a$ Cogs, $b$ Tablets and $c$ Compasses, that player gets $a^2 + b^2 + c^2 + 7 \cdot \min(a, b, c)$
+points.
+
+However, the scoring is complicated by the concept of \emph{Wildcard Science} tokens. For each Wildcard Science token
+a player has, she may count that as one of the three ordinary types of Science tokens. For instance, the first player in Sample Input 1 has
+$2$ Cogs, $1$ Tablet, $2$ Compasses, and $1$ Wildcard Science, so could thus choose to have the distributions
+$(3, 1, 2), (2, 2, 2)$ or $(2, 1, 3)$ of Cogs, Tablets and Compasses, respectively.
+The possible scores for this player are then $3^2 + 1^2 + 2^2 + 7 \cdot 1 = 21$, $2^2 + 2^2 + 2^2 + 7 \cdot 2 = 26$
+and $2^2 + 1^2 + 3^2 + 7 \cdot 1 = 21$ depending on how the Wildcard Science is assigned.
+Thus, the maximum score for this player is $26$.
+
+Given the number of tokens each player in the game has, compute the maximum possible score that each of them
+can achieve if they assign their Wildcard Science tokens optimally.
+
+
+
+\section*{Input}
+The input consists of:
+\begin{itemize}
+  \item One line with an integer $n$ ($3 \le n \le 7$), the number of players in the game.
+  \item $n$ lines, each with four integers $a$, $b$, $c$, $d$
+        ($0 \le a, b, c, d \le 10^9$), giving the number of Cog, Tablet, Compass, and Wildcard Science tokens of a player.
+%        The $i$th line with the number of Cog, Tablet, Compass and Wildcard Science tokens of the $i$th player in the game.
+\end{itemize}
+
+\section*{Output}
+For each player, in the same order they are given in the input, output the maximum score the player may get.

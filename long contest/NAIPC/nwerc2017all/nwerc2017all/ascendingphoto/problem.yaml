@@ -1,0 +1,9 @@
+name: Ascending Photo
+source: Northwestern Europe Regional Contest (NWERC) 2017
+source_url: http://2017.nwerc.eu
+author: Jim Grimmett
+license: cc by-sa
+
+limits:
+  time_multiplier: 2.5
+  

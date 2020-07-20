@@ -1,0 +1,11 @@
+INT(3, 7, n)
+NEWLINE
+
+REP(n)
+  REPI(i, 4, SPACE)
+    INT(0, 1000000000, v[i])
+  END
+  NEWLINE
+END
+
+EOF

@@ -1,0 +1,52 @@
+\contentsline {section}{Configuration}{2}%
+\contentsline {subsection}{Template}{2}%
+\contentsline {subsection}{Vim}{2}%
+\contentsline {section}{Ad-Hoc}{2}%
+\contentsline {subsection}{Debrujin}{2}%
+\contentsline {subsection}{Josephus Problem}{3}%
+\contentsline {subsection}{LIS}{3}%
+\contentsline {subsection}{Subsets}{3}%
+\contentsline {subsection}{Josephus Problem}{3}%
+\contentsline {subsection}{Fib in Compile Time}{3}%
+\contentsline {subsection}{Tips}{3}%
+\contentsline {section}{Geometry}{3}%
+\contentsline {section}{Graph}{3}%
+\contentsline {subsection}{Bip Match}{3}%
+\contentsline {subsection}{Bron Kerbosch}{4}%
+\contentsline {subsection}{Dinic Min Cost}{4}%
+\contentsline {subsection}{Dinic}{5}%
+\contentsline {subsection}{Djikstra}{6}%
+\contentsline {subsection}{Edmonds Karp}{6}%
+\contentsline {subsection}{MaxClique}{6}%
+\contentsline {subsection}{Floyd Warshall}{7}%
+\contentsline {subsection}{Gale Shapley}{7}%
+\contentsline {subsection}{Graphs Paths}{7}%
+\contentsline {subsection}{kosajaru}{7}%
+\contentsline {subsection}{Kruskal}{8}%
+\contentsline {subsection}{LCA}{8}%
+\contentsline {subsection}{Link Cut}{9}%
+\contentsline {subsection}{LIS}{10}%
+\contentsline {subsection}{Seg Tree}{10}%
+\contentsline {subsection}{MaxClique MeetInTheMiddle}{11}%
+\contentsline {subsection}{Tarjan}{11}%
+\contentsline {subsection}{Union Find}{12}%
+\contentsline {section}{Math}{12}%
+\contentsline {subsection}{Binomial}{12}%
+\contentsline {subsection}{Bit}{12}%
+\contentsline {subsection}{Fast Pot}{12}%
+\contentsline {subsection}{Fast Fib}{13}%
+\contentsline {subsection}{FFT}{13}%
+\contentsline {subsection}{GCD}{13}%
+\contentsline {subsection}{LCM}{13}%
+\contentsline {subsection}{Phi}{13}%
+\contentsline {subsection}{Sieve}{14}%
+\contentsline {subsection}{Sums}{14}%
+\contentsline {section}{String}{14}%
+\contentsline {subsection}{Aho Corasick}{14}%
+\contentsline {subsection}{Hash}{15}%
+\contentsline {subsection}{KMP}{15}%
+\contentsline {subsection}{Prefix Function}{15}%
+\contentsline {subsection}{Suffix Array}{15}%
+\contentsline {subsection}{Suffix Array2}{16}%
+\contentsline {subsection}{Suffix Automata}{17}%
+\contentsline {subsection}{Z Function}{18}%

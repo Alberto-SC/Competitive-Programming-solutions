@@ -1,0 +1,22 @@
+INT(1, 20, n)
+NEWLINE
+
+REP(n, SPACE)
+  REGEX("[a-z]+", s)
+  ASSERT(STRLEN(s) <= 20)
+END
+NEWLINE
+
+INT(1, 100000, m)
+NEWLINE
+
+REP(m)
+  REGEX("[a-z]+", a)
+  ASSERT(STRLEN(a) <= 20)
+    SPACE
+  REGEX("[a-z]+", b)
+    ASSERT(STRLEN(b) <= 20)
+    SPACE
+  REGEX("correct|incorrect", c)
+    NEWLINE
+END

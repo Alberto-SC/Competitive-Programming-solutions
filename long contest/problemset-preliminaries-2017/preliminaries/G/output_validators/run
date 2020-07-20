@@ -1,0 +1,57 @@
+#!/bin/bash
+# called as:
+# ./run in ans feedback_dir [additional arguments] < out [> interactive_input]
+input=$1
+answer=$2
+feedbackdir=$3
+
+# relevant files in feedback_dir:
+# teammessage.txt (not in use for ICPC contests)
+judgemessage=${feedbackdir}judgemessage.txt
+
+# cd to this script directory
+scriptdir=${0%/*}
+
+#echo STDOUT
+#echo STDERR >&2
+
+# return value:
+AC=42
+WA=43
+
+# copy stdin to tempfile, so that we can reuse it
+output=$(mktemp -p /tmp "BAPC-preliminaries-F-XXXXXX")
+cat > $output
+
+# returns 0 on success, 1 on failure
+$scriptdir/grammar < $output 1>> $judgemessage 2>&1
+retcode=$?
+if [ "$retcode" = "43" ] ; then
+	echo "GRAMMAR CHECK FAILED. See above for details." >> $judgemessage
+	echo "GRAMMAR CHECK FAILED."
+	exit $WA
+fi
+if [ "$retcode" != "42" ] ; then
+	echo "Unexpected return code from grammar check!" >> $judgemessage
+	echo "Unexpected return code from grammar check!"
+	# not WA; 1 here indicates an error in the checker script itself
+	exit 43
+fi
+
+# Now check the validity of the output
+$scriptdir/output_validator $input $answer < $output >> $judgemessage 2>&1
+retcode=$?
+if [ "$retcode" = "43" ] ; then
+	echo "VALIDATOR CHECK FAILED. See above for details." >> $judgemessage
+	echo "VALIDATOR CHECK FAILED."
+	exit $WA
+fi
+
+if [ "$retcode" != "42" ] ; then
+	echo "Unexpected return code from output validator!" >> $judgemessage
+	echo "Unexpected return code from output validator!"
+	# not WA; 1 here indicates an error in the checker script itself
+	exit 43
+fi
+
+exit $AC

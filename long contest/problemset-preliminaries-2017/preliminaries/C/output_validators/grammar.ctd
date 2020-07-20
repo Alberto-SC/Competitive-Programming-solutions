@@ -1,0 +1,13 @@
+IF(MATCH("1234567890"))
+	INT(0,999,a[-1])
+	WHILEI(i,MATCH(" "))
+		SPACE
+		INT(0,999,a[i])
+		ASSERT(a[i-1] < a[i])
+	END
+ELSE
+	STRING("none")
+END
+
+NEWLINE
+EOF

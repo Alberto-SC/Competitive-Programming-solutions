@@ -1,0 +1,22 @@
+# Number of gears.
+INT(2, 10^5, n)
+NEWLINE
+
+# Gear radii.
+REP(n, SPACE)
+  INT(1, 10^8)
+END
+NEWLINE
+
+# Number of edges, plus edges.
+INT(n-1, 10^5, m)
+NEWLINE
+
+REPI(i, m)
+  INT(     1, n, a[i]) SPACE
+  INT(a[i]+1, n, b[i]) SPACE
+  INT(1, 10^8, w[i]) NEWLINE
+END
+
+# Edges are unique.
+ASSERT(UNIQUE(a, b))

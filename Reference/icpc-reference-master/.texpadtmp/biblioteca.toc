@@ -1,0 +1,47 @@
+\contentsline {section}{Configuration}{2}
+\contentsline {subsection}{Template}{2}
+\contentsline {subsection}{Vim}{2}
+\contentsline {section}{Ad-Hoc}{2}
+\contentsline {subsection}{Debrujin}{2}
+\contentsline {subsection}{Josephus Problem}{2}
+\contentsline {subsection}{LIS}{2}
+\contentsline {subsection}{Subsets}{3}
+\contentsline {subsection}{Josephus Problem}{3}
+\contentsline {subsection}{Fib in Compile Time}{3}
+\contentsline {subsection}{Tips}{3}
+\contentsline {section}{Geometry}{3}
+\contentsline {section}{Graph}{3}
+\contentsline {subsection}{Bron Kerbosch}{3}
+\contentsline {subsection}{Dinic Min Cost}{3}
+\contentsline {subsection}{Dinic}{4}
+\contentsline {subsection}{Edmonds Karp}{5}
+\contentsline {subsection}{MaxClique}{6}
+\contentsline {subsection}{Bip Match}{6}
+\contentsline {subsection}{Djikstra}{7}
+\contentsline {subsection}{Floyd Warshall}{7}
+\contentsline {subsection}{Graphs Paths}{7}
+\contentsline {subsection}{Kruskal}{7}
+\contentsline {subsection}{LCA}{7}
+\contentsline {subsection}{Link Cut}{9}
+\contentsline {subsection}{LIS}{10}
+\contentsline {subsection}{Seg Tree}{10}
+\contentsline {subsection}{Tarjan}{10}
+\contentsline {subsection}{Union Find}{11}
+\contentsline {section}{Math}{11}
+\contentsline {subsection}{Phi}{11}
+\contentsline {subsection}{Binomial}{12}
+\contentsline {subsection}{Bit}{12}
+\contentsline {subsection}{Fast Pot}{12}
+\contentsline {subsection}{Fast Fib}{12}
+\contentsline {subsection}{FFT}{12}
+\contentsline {subsection}{GCD}{13}
+\contentsline {subsection}{LCM}{13}
+\contentsline {subsection}{Sieve}{13}
+\contentsline {subsection}{Sums}{13}
+\contentsline {section}{String}{13}
+\contentsline {subsection}{Aho Corasick}{13}
+\contentsline {subsection}{Hash}{14}
+\contentsline {subsection}{Prefix Function}{14}
+\contentsline {subsection}{Suffix Array}{14}
+\contentsline {subsection}{Suffix Automata}{15}
+\contentsline {subsection}{Z Function}{16}

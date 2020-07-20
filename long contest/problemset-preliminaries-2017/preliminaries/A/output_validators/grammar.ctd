@@ -1,0 +1,4 @@
+REGEX("[a-z]+",ans) NEWLINE
+SET(values[0] = "impossible", values[1] = "unique", values[2] = "ambiguous")
+ASSERT(INARRAY(ans,values))
+EOF
