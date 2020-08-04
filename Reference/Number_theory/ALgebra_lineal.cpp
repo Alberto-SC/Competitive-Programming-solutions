@@ -29,19 +29,27 @@ struct Matrix {
         for(int i=0;i<n;i++)
             A[i][i] = (T)1;
     }
-    Matrix operator * (const Matrix<T> &B){
-        assert(c == B.r);
-        int i,j,k;
-        int x = r;
-        int y = c;
-        int z = B.c;
-        Matrix <T> C(x,z,0);
-        for(i=0 ; i<x ; i++)
-            for(j=0 ; j<z ; j++)
-                for(k=0 ; k<y ; k++)
-                    C[i][j] = (C[i][j] + ( (long long )A[i][k] * (long long)B[k][j] ));
+    Matrix operator * (const Matrix<T> &B){    
+//     Matrix <T> C(r,B.c,0);
+//     for(int i=0 ; i<r ; i++)
+//         for(int j=0 ; j<B.c ; j++)
+//             for(int k=0 ; k<c ; k++)
+//                 C[i][j] = (C[i][j] + ( (long long )A[i][k] * (long long)B[k][j] ));
+//     return C;
+        Matrix<T> C(r,B.c,0);
+        for(int i = 0;i<r;i++){
+            for(int j = 0;j<B.c;j++){
+                for(int k = 0;k<c;k++){
+                    C[i][j] = (C[i][j] + ((lli)A[i][k] * (lli)B[k][j]));
+                    if(C[i][j]>= 8ll*mod*mod)
+                        C[i][j]%=mod;
+                }
+            }
+        }
+        for(int i = 0;i<r;i++)for(int j = 0;j<c;j++)C[i][j]%=mod;
         return C;
     }
+
     Matrix operator + (const Matrix<T> &B){
         assert(r == B.r);
         assert(c == B.c);

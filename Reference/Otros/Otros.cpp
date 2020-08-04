@@ -59,6 +59,8 @@ int main(){
         for(int j = 1; j <= m; j++)
             cout << a[i][j] << " \n"[j == m];
 
+    cout << bitset<20>(n) << "\n";
+
 }
 //________________FOR PYTHON____________________//
 template<typename T>
@@ -255,13 +257,6 @@ while(l<r){
     else r = m-1;
 } 
 // find the first that is possible
-while(l+1<r){
-    lli m = (l+r+1)>>1;
-    if(check(m))
-        r = m;
-    else 
-        l = m; 
-}
 // is in r;
 
 while(l<r){
@@ -327,3 +322,61 @@ void dfs(int y,int x){
 //     cout<<a*b2<<endl;
 //     return 0;
 // }
+// Entrada y salida rápida 
+int get(){
+  char c;
+  while(c=getchar(),(c<'0'||c>'9')&&(c!='-'));
+  bool flag=(c=='-');
+  if(flag)
+    c=getchar();
+  int x=0;
+  while(c>='0'&&c<='9')
+    {
+      x=x*10+c-48;
+      c=getchar();
+    }
+  return flag?-x:x;
+}
+ 
+void output(int x){
+    if(x<0)
+        {
+        putchar('-');
+        x=-x;
+        }
+    int len=0,data[10];
+    while(x)
+        {
+        data[len++]=x%10;
+        x/=10;
+        }
+    if(!len)
+        data[len++]=0;
+    while(len--)
+        putchar(data[len]+48);
+    putchar('\n');
+}
+
+// Make a png image to show graph 
+// graph is an array of vectors vector<int> graph[n]
+// you only need to install graphvis  with  sudo apt-get install graphviz and xdg to open automatically 
+// this can be installed with sudo apt-get install -y xdg-utils then you only need to call show_graph in any program with a graph 
+
+void show_graph(const bool undirected = true) {
+    /*! Converts graph to dot format
+     *\param undirected is whether graph is undirected or not */
+	ofstream os{"graph.dot"};
+	os << (undirected ? "graph" : "digraph");
+	os << " G {" << endl;
+	for(int u = 0; u < maxn; ++u) {
+		for (const auto v : graph[u]) {
+			if (!undirected || u <= v) {
+				os << "\t" << u << (undirected ? " -- " : " -> ") << v << endl;
+			}
+		}
+	}
+	os << "}" << endl;
+    /* Displays dot using image viewer
+    / This command is for Linux. You can change this command for a different OS or for a different image viewer.*/
+	system("dot -Tpng graph.dot -o graph.png && xdg-open graph.png");
+}
