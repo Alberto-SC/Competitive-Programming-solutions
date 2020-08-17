@@ -41,6 +41,7 @@ int main(){
 	freopen("output.txt", "w", stdout);
     fclose(stdin);
 	fclose(stdout);
+    scanf("%[^\n]",s);  
 	ios_base::sync_with_stdio(false); 
     cin.tie(NULL);  
     double x = 2.0,y = 1.0;
