@@ -2,6 +2,13 @@
 #define _GLIBCXX_DEBUG 1
 #define _GLIBCXX_DEBUG_PEDANTIC 1
 #define _FORTIFY_SOURCE 2
+#pragma GCC target ("avx2")
+#pragma GCC optimization ("O3")
+#pragma GCC optimization ("unroll-loops")
+
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma")
+
 //#pragma GCC optimize(2)
 //#pragma GCC optimize(3)  
 //#pragma GCC optimize(4)

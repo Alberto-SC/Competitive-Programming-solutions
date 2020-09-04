@@ -8,7 +8,7 @@ int rand(int a, int b) {
 
 int main(int argc, char* argv[]) {
     srand(atoi(argv[1]));
-    int n = rand(2, 20);
+    int n = rand(300000, 300000);
     printf("%d\n", n);
     vector<pair<int,int>> edges;
     for(int i = 2; i <= n; ++i) {

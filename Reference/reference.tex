@@ -23,6 +23,8 @@
 \usepackage{xparse}
 \usepackage{geometry}
 \usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \newcommand\TestAppExists[3]{#2}
 \usepackage{minted}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
@@ -214,21 +216,6 @@
 				k = \floor*{\frac{n}{p}}  + \floor*{\frac{n}{p^{2}}} +
 				 \floor*{\frac{n}{p^{3}}} + \cdots	
 			\end{align*}
-			Cálculo de la depreciación
-			\begin{align*}
-				D = \frac{C-R}{N}
-			\end{align*}
-			\begin{align*}
-				R = C*(1-\frac{T}{100})^{N}
-			\end{align*}
-			\begin{align*}
-				T = \frac{1}{N}*100
-			\end{align*}
-			D = depreciación anual\\
-			C = Costo del activo\\
-			R = Valor de rescate\\
-			N = Vida útil\\
-			T = \% de depreciación anual\\
 
 			\subsubsection{Primaly test(miller rabin)}
 			\pathinputminted[tabsize=2,breaklines,firstline=184,lastline=232,fontsize=\small]{c++}{Primes.cpp}

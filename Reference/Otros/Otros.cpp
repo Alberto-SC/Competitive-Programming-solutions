@@ -42,6 +42,9 @@ int main(){
     fclose(stdin);
 	fclose(stdout);
     scanf("%[^\n]",s);  
+    map<int,int> mp;
+    mp.reserve(1024);
+    mp.max_load_factor(0.25);
 	ios_base::sync_with_stdio(false); 
     cin.tie(NULL);  
     double x = 2.0,y = 1.0;
@@ -237,7 +240,7 @@ int findMax(int r,int c){
             if (sum > maxSum){  
                 maxSum = sum;  
                 finalLeft = left;  
-                finalRight = right;  
+                finalRight = right;   
                 finalTop = start;  
                 finalBottom = finish;  
             }  
@@ -265,6 +268,13 @@ while(l<r){
     if(check(mid,0) || check(mid,1));
         r = mid;
     else l = mid+1:
+}
+while(l<=r){
+    int m=(l+r)>>1;
+    if(sum(m)-1<s)
+        l=m+1;
+    else
+        r=m-1;
 }
 // ans is in l
 /*----------------------Graph Moves----------------*/
@@ -380,4 +390,24 @@ void show_graph(const bool undirected = true) {
     /* Displays dot using image viewer
     / This command is for Linux. You can change this command for a different OS or for a different image viewer.*/
 	system("dot -Tpng graph.dot -o graph.png && xdg-open graph.png");
+}
+
+
+inline int reverse_bits(int x){
+    x = ((x >> 1) & 0x55555555) | ((x << 1) & 0xaaaaaaaa);
+    x = ((x >> 2) & 0x33333333) | ((x << 2) & 0xcccccccc);
+    x = ((x >> 4) & 0x0f0f0f0f) | ((x << 4) & 0xf0f0f0f0);
+    x = ((x >> 8) & 0x00ff00ff) | ((x << 8) & 0xff00ff00);
+    x = ((x >>16) & 0x0000ffff) | ((x <<16) & 0xffff0000);
+    return x;
+}
+ 
+inline lli reverse_bits(lli x){
+    x = ((x >> 1) & 0x5555555555555555LL) | ((x << 1) & 0xaaaaaaaaaaaaaaaaLL);
+    x = ((x >> 2) & 0x3333333333333333LL) | ((x << 2) & 0xccccccccccccccccLL);
+    x = ((x >> 4) & 0x0f0f0f0f0f0f0f0fLL) | ((x << 4) & 0xf0f0f0f0f0f0f0f0LL);
+    x = ((x >> 8) & 0x00ff00ff00ff00ffLL) | ((x << 8) & 0xff00ff00ff00ff00LL);
+    x = ((x >>16) & 0x0000ffff0000ffffLL) | ((x <<16) & 0xffff0000ffff0000LL);
+    x = ((x >>32) & 0x00000000ffffffffLL) | ((x <<32) & 0xffffffff00000000LL);
+    return x;
 }

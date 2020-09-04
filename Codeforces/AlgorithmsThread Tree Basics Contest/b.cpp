@@ -1,3 +1,6 @@
+#define _GLIBCXX_DEBUG 1
+#define _GLIBCXX_DEBUG_PEDANTIC 1
+#define _FORTIFY_SOURCE 2
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
@@ -12,33 +15,24 @@ void add_edge(int u,int v){
     graph[v].push_back(u);
 }
 vector<int> depth(maxn);
-vector<int> parent(maxn);
-int pa[25][maxn];
 int q[maxn];
 int top;
-vector<int> dist(maxn);
+vector<int> dist[2];
 const int INF = 10000000;
-void dfs(int u,int p = -1){
-    parent[i] = p;
-    for(auto v:graph[u]){
-        if(v == p)continue;
-        dfs(v,u);
-    }
-}
-pair<int,int> bfs(int s,int n){
-    for(int i = 0;i<n;i++)dist[i] = INF;
+pair<int,int> bfs(int s,int n,int who){
+    for(int i = 0;i<n;i++)dist[who][i] = INF;
     q[top++] = s;
-    dist[s] = 0;
+    dist[who][s] = 0;
     pair<int,int> ans;
     ans.x = -1;
     for(int i = 0;i<top;i++){
         int u = q[i];
         for(auto v:graph[u]){
-            if(dist[v]< dist[u]+1)continue;
-            dist[v] = dist[u]+1;
+            if(dist[who][v]< dist[who][u]+1)continue;
+            dist[who][v] = dist[who][u]+1;
             q[top++] = v;
-            if(dist[v]>ans.y){
-                ans.y = dist[v];
+            if(dist[who][v]>ans.y){
+                ans.y = dist[who][v];
                 ans.x = v; 
             }
         }
@@ -56,14 +50,17 @@ int main(){__
         u--,v--;
         add_edge(u,v);
     }
-    auto dim = bfs(0,n);
+    dist[0].resize(n+5);
+    dist[1].resize(n+5);
+    auto dim = bfs(0,n,0);
     top = 0;
-    dim = bfs(dim.x,n);   
-    dfs(dim.x);
-    for(int i = 0;i<n;i++)cout<<dist[i]<<" ";
-    cout<<endl; 
+    dim = bfs(dim.x,n,1);   
+    // bfs(dim,n,0);
+    top = 0;
+    for(int i = 0;i<n;i++)
+        if(dist[1][i] == dim.y){bfs(i,n,0);break;}
     for(int i = 0;i<n;i++){
-        if(dist[i] == dim.y|| dist[i]== 0|| parent[i] == parent[dim,])cout<<dim.y+1<<endl;
+        if(dist[0][i] == dim.y||dist[1][i] == dim.y || dist[0][i]== 0 || dist[1][i] == 0)cout<<dim.y+1<<endl;
         else cout<<dim.y<<endl;
     }
     return 0;
